@@ -1,6 +1,10 @@
 # C-Basic-Console-Program
 On this Repository you'll find some of the communs exercises to learn C# on console before pass to Intermediate level. Feel free to reach out my portafolio.
 
+To create a new C# Project on Visual Studio Code, you must to copy and paste the following line into your Visual Studio Code Terminal:
+
+<code>dotnet new console --framework net8.0 --use-program-main</code>
+
 EXERCISES:
 
         PROGRAMACION FOR:
