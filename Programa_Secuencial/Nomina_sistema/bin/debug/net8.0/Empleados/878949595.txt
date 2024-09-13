@@ -1,0 +1,4 @@
+Empleado Asalariado: jose rodriguez
+NSS: 878949595
+Salario Semanal:$14,000.00
+Ingresos:$14,000.00

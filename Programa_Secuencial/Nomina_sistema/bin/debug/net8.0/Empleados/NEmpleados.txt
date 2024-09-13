@@ -1,0 +1,37 @@
+Empleado Asalariado: Jose Rodriguez
+NSS: 7895412
+Salario Semanal:$15,000.00
+Ingresos: $15,000.00
+
+Empleado Asalariado: jose rodriguez
+NSS: 878949595
+Salario Semanal:$14,000.00
+Ingresos: $14,000.00
+
+jose,rodriguez,7894596,$12,000.00
+Ingresos: $12,000.00
+
+jose,rodriguez,178118,$192.00,9.00
+Ingresos: $1,728.00
+
+jose,rodriguez,7896512,$200.00,8.00
+Ingresos: $1,600.00
+
+jose,rodriguez,789849412,$18,000.00
+Ingresos: $18,000.00
+
+jose,rodrigu,1223,$22,222.00
+Ingresos: $22,222.00
+
+luis,baez,147852,$78,941.00
+Ingresos: $78,941.00
+
+luis,martinez,789456,$14,000.00
+Ingresos: $14,000.00
+
+manuel,ramirez,741852,$200.00,8.00
+Ingresos: $1,600.00
+
+angel,david,303030303,$400.00,80.00
+Ingresos: $40,000.00
+

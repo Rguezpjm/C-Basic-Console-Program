@@ -1,0 +1,2 @@
+jose,rodriguez,7894596,$12,000.00
+Ingresos: $12,000.00

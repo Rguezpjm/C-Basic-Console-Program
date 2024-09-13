@@ -1,0 +1,4 @@
+Empleado Asalariado: Jose Rodriguez
+NSS: 7895412
+Salario Semanal:$15,000.00
+Ingresos:$15,000.00
