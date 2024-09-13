@@ -1,0 +1,14 @@
+C:\Users\jose.pimentel\Desktop\Excel\Nomina Proyecto\obj\Debug\net8.0\Nomina Proyecto.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jose.pimentel\Desktop\Excel\Nomina Proyecto\obj\Debug\net8.0\Nomina Proyecto.AssemblyInfoInputs.cache
+C:\Users\jose.pimentel\Desktop\Excel\Nomina Proyecto\obj\Debug\net8.0\Nomina Proyecto.AssemblyInfo.cs
+C:\Users\jose.pimentel\Desktop\Excel\Nomina Proyecto\obj\Debug\net8.0\Nomina Proyecto.csproj.CoreCompileInputs.cache
+C:\Users\jose.pimentel\Desktop\Excel\Nomina Proyecto\bin\Debug\net8.0\Nomina Proyecto.exe
+C:\Users\jose.pimentel\Desktop\Excel\Nomina Proyecto\bin\Debug\net8.0\Nomina Proyecto.deps.json
+C:\Users\jose.pimentel\Desktop\Excel\Nomina Proyecto\bin\Debug\net8.0\Nomina Proyecto.runtimeconfig.json
+C:\Users\jose.pimentel\Desktop\Excel\Nomina Proyecto\bin\Debug\net8.0\Nomina Proyecto.dll
+C:\Users\jose.pimentel\Desktop\Excel\Nomina Proyecto\bin\Debug\net8.0\Nomina Proyecto.pdb
+C:\Users\jose.pimentel\Desktop\Excel\Nomina Proyecto\obj\Debug\net8.0\Nomina Proyecto.dll
+C:\Users\jose.pimentel\Desktop\Excel\Nomina Proyecto\obj\Debug\net8.0\refint\Nomina Proyecto.dll
+C:\Users\jose.pimentel\Desktop\Excel\Nomina Proyecto\obj\Debug\net8.0\Nomina Proyecto.pdb
+C:\Users\jose.pimentel\Desktop\Excel\Nomina Proyecto\obj\Debug\net8.0\Nomina Proyecto.genruntimeconfig.cache
+C:\Users\jose.pimentel\Desktop\Excel\Nomina Proyecto\obj\Debug\net8.0\ref\Nomina Proyecto.dll
