@@ -1,0 +1,81 @@
+--Creacion de BD
+CREATE DATABASE BD_PROYECTFINAL;
+
+USE BD_PROYECTFINAL;
+-- Creación de la tabla Taxi
+CREATE TABLE Taxi (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Placa VARCHAR(20) NOT NULL
+);
+
+-- Creación de la tabla Viaje
+CREATE TABLE Viaje (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    FechaInicio DATETIME NOT NULL,
+    FechaFin DATETIME,
+    Desde VARCHAR(100) NOT NULL,
+    Hasta VARCHAR(100) NOT NULL,
+    Calificacion INT CHECK (Calificacion BETWEEN 1 AND 5),
+    TaxiId INT,
+    FOREIGN KEY (TaxiId) REFERENCES Taxi(Id)
+);
+
+-- Creación de la tabla DetalleViaje
+CREATE TABLE DetalleViaje (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Fecha DATETIME NOT NULL,
+    Latitude DECIMAL(9,6) NOT NULL,
+    Longitude DECIMAL(9,6) NOT NULL,
+    ViajeId INT,
+    FOREIGN KEY (ViajeId) REFERENCES Viaje(Id)
+);
+
+-- Creación de la tabla Usuario
+CREATE TABLE Usuario (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    Documento VARCHAR(20) NOT NULL,
+    Nombre VARCHAR(50) NOT NULL,
+    Apellido VARCHAR(50) NOT NULL
+);
+
+-- Creación de la tabla GrupoUsuarios
+CREATE TABLE GrupoUsuarios (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    NombreGrupo VARCHAR(50) NOT NULL
+);
+
+-- Creación de la tabla GrupoUsuariosDetalle
+CREATE TABLE GrupoUsuariosDetalle (
+    Id INT PRIMARY KEY IDENTITY(1,1),
+    UsuarioId INT,
+    GrupoId INT,
+    FOREIGN KEY (UsuarioId) REFERENCES Usuario(Id),
+    FOREIGN KEY (GrupoId) REFERENCES GrupoUsuarios(Id)
+);
+
+-- Insertar un taxi
+INSERT INTO Taxi (Placa) 
+VALUES ('ABC1234'), ('XYZ5678');
+
+-- Insertar viajes
+INSERT INTO Viaje (FechaInicio, FechaFin, Desde, Hasta, Calificacion, TaxiId)
+VALUES ('2024-11-22 08:00:00', '2024-11-22 10:00:00', 'Ciudad A', 'Ciudad B', 5, 1),
+       ('2024-11-22 09:30:00', '2024-11-22 11:00:00', 'Ciudad B', 'Ciudad C', 4, 2);
+
+-- Insertar detalles de viaje
+INSERT INTO DetalleViaje (Fecha, Latitude, Longitude, ViajeId)
+VALUES ('2024-11-22 08:15:00', 19.432608, -99.133209, 1),
+       ('2024-11-22 09:45:00', 19.451235, -99.137234, 2);
+
+-- Insertar usuarios
+INSERT INTO Usuario (Documento, Nombre, Apellido)
+VALUES ('12345678', 'Juan', 'Pérez'),
+       ('87654321', 'Ana', 'Gómez');
+
+-- Insertar grupos de usuarios
+INSERT INTO GrupoUsuarios (NombreGrupo)
+VALUES ('Conductores'), ('Administradores');
+
+-- Insertar detalles de grupo de usuarios
+INSERT INTO GrupoUsuariosDetalle (UsuarioId, GrupoId)
+VALUES (1, 1), (2, 2);
