@@ -1,0 +1,159 @@
+CREATE PROCEDURE InsertarTaxi
+    @Placa NVARCHAR(50)
+AS
+BEGIN
+    INSERT INTO Taxi (Placa)
+    VALUES (@Placa)
+END
+CREATE PROCEDURE ActualizarTaxi
+    @Id INT,
+    @Placa NVARCHAR(50)
+AS
+BEGIN
+    UPDATE Taxi
+    SET Placa = @Placa
+    WHERE Id = @Id
+END
+CREATE PROCEDURE EliminarTaxi
+    @Id INT
+AS
+BEGIN
+    DELETE FROM Taxi WHERE Id = @Id
+END
+CREATE PROCEDURE InsertarViaje
+    @FechaInicio DATETIME,
+    @FechaFin DATETIME,
+    @Desde NVARCHAR(100),
+    @Hasta NVARCHAR(100),
+    @Calificacion INT
+AS
+BEGIN
+    INSERT INTO Viaje (FechaInicio, FechaFin, Desde, Hasta, Calificacion)
+    VALUES (@FechaInicio, @FechaFin, @Desde, @Hasta, @Calificacion)
+END
+CREATE PROCEDURE ActualizarViaje
+    @Id INT,
+    @FechaInicio DATETIME,
+    @FechaFin DATETIME,
+    @Desde NVARCHAR(100),
+    @Hasta NVARCHAR(100),
+    @Calificacion INT
+AS
+BEGIN
+    UPDATE Viaje
+    SET FechaInicio = @FechaInicio, FechaFin = @FechaFin, Desde = @Desde, Hasta = @Hasta, Calificacion = @Calificacion
+    WHERE Id = @Id
+END
+CREATE PROCEDURE EliminarViaje
+    @Id INT
+AS
+BEGIN
+    DELETE FROM Viaje WHERE Id = @Id
+END
+CREATE PROCEDURE InsertarDetalleViaje
+    @Fecha DATETIME,
+    @Latitude FLOAT,
+    @Longitude FLOAT,
+    @ViajeId INT
+AS
+BEGIN
+    INSERT INTO DetalleViaje (Fecha, Latitude, Longitude, ViajeId)
+    VALUES (@Fecha, @Latitude, @Longitude, @ViajeId)
+END
+CREATE PROCEDURE ActualizarDetalleViaje
+    @Id INT,
+    @Fecha DATETIME,
+    @Latitude FLOAT,
+    @Longitude FLOAT,
+    @ViajeId INT
+AS
+BEGIN
+    UPDATE DetalleViaje
+    SET Fecha = @Fecha, Latitude = @Latitude, Longitude = @Longitude, ViajeId = @ViajeId
+    WHERE Id = @Id
+END
+CREATE PROCEDURE EliminarDetalleViaje
+    @Id INT
+AS
+BEGIN
+    DELETE FROM DetalleViaje WHERE Id = @Id
+END
+CREATE PROCEDURE InsertarUsuario
+    @Documento NVARCHAR(50),
+    @Nombre NVARCHAR(100),
+    @Apellido NVARCHAR(100)
+AS
+BEGIN
+    INSERT INTO Usuario (Documento, Nombre, Apellido)
+    VALUES (@Documento, @Nombre, @Apellido)
+END
+CREATE PROCEDURE ActualizarUsuario
+    @Id INT,
+    @Documento NVARCHAR(50),
+    @Nombre NVARCHAR(100),
+    @Apellido NVARCHAR(100)
+AS
+BEGIN
+    UPDATE Usuario
+    SET Documento = @Documento, Nombre = @Nombre, Apellido = @Apellido
+    WHERE Id = @Id
+END
+CREATE PROCEDURE EliminarUsuario
+    @Id INT
+AS
+BEGIN
+    DELETE FROM Usuario WHERE Id = @Id
+END
+CREATE PROCEDURE InsertarGrupoUsuarios
+    @NombreGrupo NVARCHAR(100)
+AS
+BEGIN
+    INSERT INTO GrupoUsuarios (NombreGrupo)
+    VALUES (@NombreGrupo)
+END
+CREATE PROCEDURE ActualizarGrupoUsuarios
+    @Id INT,
+    @NombreGrupo NVARCHAR(100)
+AS
+BEGIN
+    UPDATE GrupoUsuarios
+    SET NombreGrupo = @NombreGrupo
+    WHERE Id = @Id
+END
+CREATE PROCEDURE EliminarGrupoUsuarios
+    @Id INT
+AS
+BEGIN
+    DELETE FROM GrupoUsuarios WHERE Id = @Id
+END
+CREATE PROCEDURE InsertarGrupoUsuariosDetalle
+    @GrupoUsuariosId INT,
+    @UsuarioId INT
+AS
+BEGIN
+    INSERT INTO GrupoUsuariosDetalle (GrupoUsuariosId, UsuarioId)
+    VALUES (@GrupoUsuariosId, @UsuarioId)
+ENDCREATE PROCEDURE ActualizarGrupoUsuariosDetalle
+    @Id INT,
+    @GrupoUsuariosId INT,
+    @UsuarioId INT
+AS
+BEGIN
+    UPDATE GrupoUsuariosDetalle
+    SET GrupoUsuariosId = @GrupoUsuariosId, UsuarioId = @UsuarioId
+    WHERE Id = @Id
+END
+CREATE PROCEDURE EliminarGrupoUsuariosDetalle
+    @Id INT
+AS
+BEGIN
+    DELETE FROM GrupoUsuariosDetalle WHERE Id = @Id
+END
+CREATE PROCEDURE EliminarGrupoUsuariosDetalle
+    @Id INT
+AS
+BEGIN
+    DELETE FROM GrupoUsuariosDetalle WHERE Id = @Id
+END
+
+
